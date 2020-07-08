@@ -1,40 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>e-School</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://kit.fontawesome.com/2f1c6183bd.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
-    <head class="header-area">
+
+    <!-------------------Header Area Starts Here---------------------->
+
+    <header class="header-area">
         <div class="container">
-            
+            <div class="header-menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img class="Logo-image" src="images/ICON/Logo.png" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#books">Books <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#courses">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Others">Others</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog"">Blog</a>
+                            </li>
+                            <li class=" nav-item">
+                                    <button class="btn-common">Sign in</button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="welcome-area">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 slide-text">
+                                    <h5>Are you ready to Learn?</h5>
+                                    <h1>Learn With fun on <span class="text-green"> any schedule</span></h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius blandit facilisis
+                                        quam netus.</p>
+                                    <button class="btn-common">get started</button>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="images/Photos/Illustration.png" class="d-block w-100"
+                                        alt="Mackbook Picture">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 slide-text">
+                                    <h5>Are you ready to Learn?</h5>
+                                    <h1>Learn With fun on <span class="text-green"> any schedule</span></h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius blandit facilisis
+                                        quam netus.</p>
+                                    <button class="btn-common">get started</button>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="images/Photos/Illustration.png" class="d-block w-100"
+                                        alt="Mackbook Picture">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 slide-text">
+                                    <h5>Are you ready to Learn?</h5>
+                                    <h1>Learn With fun on <span class="text-green"> any schedule</span></h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius blandit facilisis
+                                        quam netus.</p>
+                                    <button class="btn-common">get started</button>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="images/Photos/Illustration.png" class="d-block w-100"
+                                        alt="Mackbook Picture">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </div>
-    </head>
+    </header>
+
+    <!-------------------Header Area Ends Here---------------------->
 
 
 
+    <!-------------------About Area Starts Here---------------------->
+
+    <div class="about-area" id="books">
+        <div class="container">
+            <div class="row">
+                <div class="about d-flex align-items-center justify-content-center col-md-3">
+                    <div class="details text-center">
+                        <img src="images/ICON/book.png" alt="Book-Image">
+                        <h3>1500+ Topic</h3>
+                        <p>Learn Anythings</p>
+                    </div>
+                </div>
+                <div class="about active d-flex align-items-center justify-content-center col-md-3">
+                    <div class="details text-center">
+                        <img src="images/ICON/Student.png" alt="Book-Image">
+                        <h3>1800+ Students</h3>
+                        <p>Learn Anythings</p>
+                    </div>
+                </div>
+                <div class="about d-flex align-items-center justify-content-center col-md-3">
+                    <div class="details text-center">
+                        <img src="images/ICON/Test.png" alt="Book-Image">
+                        <h3>9K+ Test Token</h3>
+                        <p>Learn Anythings</p>
+                    </div>
+                </div>
+                <div class="about d-flex align-items-center justify-content-center col-md-3">
+                    <div class="details text-center">
+                        <img src="images/ICON/Students.png" alt="Book-Image">
+                        <h3>2000+ Student</h3>
+                        <p>Learn Anythings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------About Area Ends Here---------------------->
 
 
 
+    <!------------------Course Area Starts Here-------------------->
+
+    <div class="course-area" id="courses">
+        <div class="container">
+            <h2 class="text-center">Online Courses</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="images/Photos/Morder pyschology.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Modern Psychology</h3>
+                        <h5>Designation</h5>
+                        <button class="btn-common">buy course</button>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <div class="first d-flex flex-row-start">
+                            <img src="images/ICON/calendar.png" alt="calendar-Icon">
+                            <p>Start 20 April, 2021</p>
+                        </div>
+                        <div class="first d-flex flex-row-start">
+                            <img src="images/ICON/people.png" alt="people-Icon">
+                            <p>60 seats</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/Photos/Morder psyc.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Modern Psychology</h3>
+                        <h5>Designation</h5>
+                        <button class="btn-common">buy course</button>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <div class="first d-flex flex-row-start">
+                            <img src="images/ICON/calendar.png" alt="calendar-Icon">
+                            <p>Start 20 April, 2021</p>
+                        </div>
+                        <div class="first d-flex flex-row-start">
+                            <img src="images/ICON/people.png" alt="people-Icon">
+                            <p>60 seats</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/Photos/Morder pychons.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Modern Psychology</h3>
+                        <h5>Designation</h5>
+                        <button class="btn-common">buy course</button>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <div class="first d-flex flex-row-start">
+                            <img src="images/ICON/calendar.png" alt="calendar-Icon">
+                            <p>Start 20 April, 2021</p>
+                        </div>
+                        <div class="first d-flex flex-row-start">
+                            <img src="images/ICON/people.png" alt="people-Icon">
+                            <p>60 seats</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------Course Area Ends Here-------------------->
 
 
 
+    <!--------------Testimonial Area Starts Here------------------>
+
+    <section class="testimonial-area" id="Others">
+        <div class="container">
+            <div class="intro-section text-center">
+                <h2>Testimonial</h2>
+                <hr />
+            </div>
+            <div class="review-section">
+                <div class="row">
+                    <div class="col-md-6 feed-back">
+                        <div class="row">
+                            <div class="client-image col-md-4">
+                                <img class="float-right img-fluid" src="images/Photos/Man.png" alt="Clients Image" />
+                            </div>
+                            <div class="client-speech col-md-8">
+                                <p><q>Nullam dapibus blandit orci, viverra gravida dui lobortis eget.viverra Maecenas
+                                        fringilla urna eu nisl scelerisque.</q></p>
+                                <h4>Chanel Iman</h4>
+                                <h5>CEO of pinterest</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 feed-back">
+                        <div class="row">
+                            <div class="client-image col-md-4">
+                                <img class="float-right img-fluid" src="images/clients/Kawsar-t.png"
+                                    alt="Clients Image" />
+                            </div>
+                            <div class="client-speech col-md-8">
+                                <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum
+                                    facilisis
+                                    porta.”</p>
+                                <h4>kawsar ahmed</h4>
+                                <h5>Puchka Developer</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 feed-back">
+                        <div class="row">
+                            <div class="client-image col-md-4">
+                                <img class="float-right img-fluid" src="images/clients/member3.jpg"
+                                    alt="Clients Image" />
+                            </div>
+                            <div class="client-speech col-md-8">
+                                <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum
+                                    facilisis
+                                    porta.”</p>
+                                <h4>ANNE HATHAWAY</h4>
+                                <h5>Lead Designer at Behance</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 feed-back">
+                        <div class="row">
+                            <div class="client-image col-md-4">
+                                <img class="float-right img-fluid" src="images/clients/member.jpg"
+                                    alt="Clients Image" />
+                            </div>
+                            <div class="client-speech col-md-8">
+                                <p>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus
+                                    molestie,
+                                    risus sem cursus neque.”</p>
+                                <h4>EMMA STONE</h4>
+                                <h5>Co-Founder of Shazam</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------Testimonial Area Ends Here------------------>
 
 
 
+    <!---------------Footer Area Starts Here-------------------->
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="footer-menu-slogan col-md-4">
+                    <p>Millions of people of all ages and from around the world are improving their lives with us</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <nav class="footer-menu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1"
+                                            aria-disabled="true">Course</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Web Design</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Graphic Design</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Business</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Marketing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Engineering</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-4">
+                            <nav class="footer-menu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1"
+                                            aria-disabled="true">Terms</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Web Design</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Graphic Design</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Business</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Marketing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Engineering</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-4">
+                            <nav class="footer-menu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Useful
+                                            Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Web Design</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Graphic Design</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Business</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Marketing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Engineering</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-profile" id="blog">
+                <hr />
+                <div class="row">
+                    <div class="col-sm-4 d-flex justify-content-end align-items-center">
+                        <h5 class="text-right ">Sign Up For Newsletter</h5>
+                    </div>
+                    <div class="col-sm-8 d-flex align-items-center">
+                        <form action="#">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Sign up for your Email..."
+                                    aria-label="Recipient's username with two button addons"
+                                    aria-describedby="button-addon4">
+                                <div class="input-group-append" id="button-addon4">
+                                    <button class="Subscribe btn btn-outline-secondary" type="button">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <p>Copyright &copy; 2020. all rights reserved by <a href="https://web.facebook.com/web.kawsarahmed" class="text-highlight">kawsar ahmed.</a></p>
+        </div>
+        </div>
+    </footer>
+
+    <!---------------Footer Area Ends Here-------------------->
 
 
 
-
-
-
-
-
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
